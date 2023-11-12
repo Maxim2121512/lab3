@@ -1,0 +1,1 @@
+import{callAjax}from"./callAjax.js";import{renderUserCards}from"./renderUserCards.js";import UsersBlock from"./usersBlock.js";var usersBlock=new UsersBlock;$(document).ready(function(){callAjax("/get/allUsers","GET",function(r){renderUserCards(r,"usersBlock-content"),usersBlock.initialize()})});
